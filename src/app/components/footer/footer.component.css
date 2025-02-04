@@ -1,0 +1,17 @@
+footer {
+    background-color: #011357; /* Match the provided color */
+  }
+  
+  footer h5 {
+    color: #ee7a07; /* Gold-like color for headings */
+  }
+  
+  footer a {
+    color: #ee7a07;
+  }
+  
+  footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  

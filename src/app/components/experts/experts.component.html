@@ -1,0 +1,58 @@
+<!-- <section id="testimonials" class="testimonials section light-background mt-3">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Experts & Advisors</h2>
+
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="testimonials-marquee">
+      <div class="testimonials-wrapper">
+        <div class="testimonial-item" *ngFor="let testimonial of testimonials; let i = index">
+          <div class="stars">
+            <i class="bi bi-star-fill" *ngFor="let star of [].constructor(5)"></i>
+          </div>
+          <p>{{ testimonial.text }}</p>
+          <div class="profile mt-auto">
+            <img [src]="testimonial.image" class="testimonial-img" alt="">
+            <h3>{{ testimonial.name }}</h3>
+            <h4>{{ testimonial.position }}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<div id="skills" class="skills-section">
+  <div class="blur-circle"></div>
+
+  <div class="divider-container">
+    <div class="divider"></div>
+  </div>
+
+  <div class="section-header">
+    <div class="header-content">
+      <span class="header-line"></span>
+      <span class="header-title">Skills</span>
+      <span class="header-line"></span>
+    </div>
+  </div>
+
+  <div class="marquee-container">
+    <div class="marquee">
+      <div *ngFor="let skill of testimonials" class="skill-card">
+        <div class="card-border">
+          <div class="divider-container">
+            <div class="divider"></div>
+          </div>
+          <div class="card-content">
+            <div class="skill-image">
+              <!-- <img [src]="skill.img" [alt]="skill" class="image"> -->
+            </div>
+            <p class="skill-name">{{ skill.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

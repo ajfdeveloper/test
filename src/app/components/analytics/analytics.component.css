@@ -1,0 +1,201 @@
+.slider {
+    background-color: transparent;
+}
+
+#slider {
+    margin-top: 30px; /* Adjust to give space below navbar */
+}
+
+.carousel {
+    max-width: 45rem;
+    /* width: 100rem; */
+    height:25rem;
+    border-radius: 15px;
+    overflow: hidden; /* Ensures no overflow on rounded corners */
+}
+
+/* Optional: To make carousel buttons look good on a small width */
+.carousel-control-prev, 
+.carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: color-mix(in srgb, #212529, transparent 50%)
+}
+
+
+  
+  .slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #465367;
+  }
+  
+  .slider .swiper-wrapper {
+    height: auto !important;
+  }
+  
+  .slider .swiper-slide {
+    min-height: 500px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .slider .swiper-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: color-mix(in srgb, #ffffff, transparent 50%);
+  }
+  
+  /* @media (max-width: 575px) {
+    .slider .swiper-slide {
+      min-height: 300px;
+    }
+  } */
+  
+  .slider .swiper-button-prev:after,
+  .slider .swiper-button-next:after {
+    font-size: 24px;
+    color: color-mix(in srgb, #212529, transparent 50%);
+  }
+  
+  .slider .content {
+    padding: 60px 80px;
+    max-width: 700px;
+    position: relative;
+  }
+  
+  .slider .content a,
+  .slider .content h2,
+  .slider .content p {
+    color: #212529;
+  }
+
+  /************/
+  .stat-item {
+    /* padding: 15px; */
+    border-right: 1px solid #212529;
+  }
+  
+  .stat-item:last-child {
+    border-right: none;
+  }
+  
+  .stat-item h2 {
+    font-weight: bold;
+  }
+  
+  .stat-item p {
+    margin: 0;
+    font-size: 15px;
+    color: #666;
+  }
+  
+
+  .slider-box{
+    display: flex;
+   justify-content: center;
+
+  }
+  
+  .card {
+    
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+    width: 25rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .card-body {
+
+    padding: 30px;
+  }
+  
+
+  .count-box-one {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 1px 2px 11px 0px rgb(0 0 0 / 3%);
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 0
+  }
+
+  .flex-wrap{
+    flex-wrap: wrap !important ;
+  }
+  
+  .info-box{
+    display: flex;
+    padding: 0;
+  }
+
+  .inner-card{
+    width: 55rem;
+    height: 15rem;
+  }
+  .card-body{
+    height: 10rem;
+  }
+
+  /* For small screens */
+@media (max-width: 768px) {
+  .carousel {
+      max-width: 100%; /* Make carousel take full width */
+      height: 18rem; /* Reduce height for smaller devices */
+  }
+
+  .slider .stat-item {
+      border-right: none; /* Remove borders for stats on smaller screens */
+  }
+ 
+  .stat-item h2 {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .slider-box .card {
+      width: 100%; /* Adjust width of the slider-box cards */
+      margin: 0 auto;
+  }
+  .box-stat{
+    width: 100%;
+    margin-right: 5px;
+  }
+  .info-box{
+    flex-direction: column;
+  
+
+  }
+
+}
+
+/* For extra small screens */
+@media (max-width: 575px) {
+  .slider .stat-item h2 {
+      font-size: 1.2rem; /* Further reduce font size for very small screens */
+  }
+
+  .slider .stat-item p {
+      font-size: 0.9rem;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+      width: 2rem;
+      height: 2rem;
+  }
+  .card-body{
+    padding-top: 0;
+  }
+}
+
+
+  

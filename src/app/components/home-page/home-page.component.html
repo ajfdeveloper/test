@@ -1,0 +1,337 @@
+<div class="container">
+    <app-analytics></app-analytics>
+</div>
+<!-- <section id="about" class="about section overview py-5">
+
+    <div class="container section-title" data-aos="fade-up">
+      <h2>About Abhay Jere Foundation<br></h2>
+      <p></p>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <h3></h3>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+          <img src="assets/sc1.jpg" class="rounded-4" alt="" style="height: 350px; width: 500px;">
+        </div>
+      </div>
+
+    </div>
+
+  </section> -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+  
+  </head>
+
+  
+
+  <div class="container mt-5">
+    <div class="row align-items-center">
+      <!-- About Text -->
+      <div class="col-md-6">
+        <h2 style="color: #0027ba;"><span style="color: #f37e41;">About</span> Abhay Jere Foundation</h2>
+        <p>
+          Welcome to <strong>the Abhay Jere Foundation</strong>, a non-profit organization dedicated to empowering communities, 
+          fostering innovation, and promoting sustainable growth. Our mission is to create lasting positive impact by supporting initiatives 
+          in all relevant social sectors like education, skilling, entrepreneurship, commerce & finance, healthcare, 
+          travel & tourism, research, technology, etc. We work towards building a future where everyone has the opportunity to thrive, 
+          regardless of their background or circumstances.
+        </p>
+        <p>
+          With a team of experienced professionals, we strive to achieve excellence 
+          in every project we undertake. Our mission is to empower communities 
+          through technology, collaboration, and forward-thinking strategies.
+        </p>
+        <p>This foundation is established in honor of Dr. Abhay Jere for furthering his commitment to transformative change 
+          at scale in our society. With a focus on making meaningful contributions, we collaborate with individuals, organizations, 
+          and communities to drive progress in areas that matter the most.</p>
+
+      </div>
+  
+      <!-- About Image -->
+      <div class="col-md-6 text-center">
+        <img
+          src="assets/sc1.jpg"
+          alt="About Us"
+          class="img-fluid rounded-4 shadow"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row shadow justify-content-center objectives-card">
+        <div class="col-lg-12 d-flex justify-content-center align-items-center">
+            <!-- <img src="assets/objective.png" height="100" /> -->
+        </div>
+        <div class="col-lg-12">
+            <h2 style="color: #0027ba;" class="objectives-title"> <span style="color: #f37e41;">OUR</span> OBJECTIVES</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-group">
+                      <li class="list-group-item" (click)="toggleMenu($event, 'submenu1')">
+                        <div class="objective-point">
+                          <i class="bi bi-check-circle me-2 text-primary"></i> Promoting Education & Skilling
+                        </div>
+                        <div class="arrow-down">
+                          <i class="bi bi-chevron-down"></i>
+                        </div>
+                      </li>
+                      <div id="submenu1" [ngClass]="{'show': openMenuId === 'submenu1'}" class="collapse submenu">
+                          <ul class="list-group">
+                              <li class="list-group">1. Enhance access to quality education for students across various socio-economic backgrounds.</li>
+                              <li class="list-group">2. Develop and implement skill-based programs to improve employability.</li>
+                              <li class="list-group">3. Introduce innovative learning methodologies and digital education tools.</li>
+                          </ul>
+                      </div>
+                      <li class="list-group-item" (click)="toggleMenu($event, 'submenu2')">
+                        <div class="objective-point">
+                          <i class="bi bi-check-circle me-2 text-primary"></i> Encouraging Entrepreneurship & Innovation
+                        </div>
+                        <div class="arrow-down">
+                          <i class="bi bi-chevron-down"></i>
+                        </div>                      
+                      </li>
+                      <div id="submenu2" [ngClass]="{'show': openMenuId === 'submenu2'}" class="collapse submenu">
+                          <ul class="list-group">
+                              <li class="list-group">1. Support aspiring entrepreneurs through mentorship, funding, and incubation programs.</li>
+                              <li class="list-group">2. Foster a culture of innovation through hackathons, competitions, and startup accelerators.</li>
+                              <li class="list-group">3. Partner with industry leaders to provide hands-on entrepreneurial training.</li>
+                          </ul>
+                      </div>
+                      <li class="list-group-item" (click)="toggleMenu($event, 'submenu3')">
+                        <div class="objective-point">
+                          <i class="bi bi-check-circle me-2 text-primary"></i> Collaboration with other Social Organisations
+                        </div>
+                        <div class="arrow-down">
+                          <i class="bi bi-chevron-down"></i>
+                        </div>                      
+                      </li>
+                      <div id="submenu3" [ngClass]="{'show': openMenuId === 'submenu3'}" class="collapse submenu">
+                          <ul class="list-group">
+                              <li class="list-group">1. Engage with relevant social organisations in a Hub-and-Spoke Model.</li>
+                              <li class="list-group">2. Create a network of knowledge-sharing and resource distribution.</li>
+                              <li class="list-group">3. Leverage partnerships to reach underserved communities effectively.</li>
+                          </ul>
+                      </div>
+                      <li class="list-group-item d-flex align-items-center" (click)="toggleMenu($event, 'submenu4')">
+                        <div class="objective-point">
+                          <i class="bi bi-check-circle me-2 text-primary"></i> Teachers & Faculty Training Programs
+                        </div>
+                        <div class="arrow-down">
+                          <i class="bi bi-chevron-down"></i>
+                        </div>                      
+                      </li>
+                      <div id="submenu4" [ngClass]="{'show': openMenuId === 'submenu4'}" class="collapse submenu">
+                          <ul class="list-group">
+                              <li class="list-group">1. Organize workshops and training sessions to upskill educators and faculty members.</li>
+                              <li class="list-group">2. Introduce modern teaching methodologies, including digital tools and experiential learning.</li>
+                              <li class="list-group">3. Provide faculty with industry exposure to align education with real-world needs.</li>
+                          </ul>
+                      </div>
+                      <li class="list-group-item d-flex align-items-center" (click)="toggleMenu($event, 'submenu5')">
+                        <div class="objective-point">
+                          <i class="bi bi-check-circle me-2 text-primary"></i> Healthcare & Community Services
+                        </div>
+                        <div class="arrow-down">
+                          <i class="bi bi-chevron-down"></i>
+                        </div>                      
+                      </li>
+                      <div id="submenu5" [ngClass]="{'show': openMenuId === 'submenu5'}" class="collapse submenu">
+                          <ul class="list-group">
+                              <li class="list-group">1. Support healthcare initiatives, including preventive care, telemedicine, and medical camps.</li>
+                              <li class="list-group">2. Collaborate with hospitals and medical institutions to improve healthcare accessibility.</li>
+                              <li class="list-group">3. Promote mental health awareness and well-being programs within communities.</li>
+                          </ul>
+                      </div>
+                      <li class="list-group-item d-flex align-items-center" (click)="toggleMenu($event, 'submenu6')">
+                        <div class="objective-point">
+                          <i class="bi bi-check-circle me-2 text-primary"></i> Offering Various Services to the Community
+                        </div>
+                        <div class="arrow-down">
+                          <i class="bi bi-chevron-down"></i>
+                        </div>                      
+                      </li>
+                      <div id="submenu6" [ngClass]="{'show': openMenuId === 'submenu6'}" class="collapse submenu">
+                          <ul class="list-group">
+                              <li class="list-group">1. Provide career guidance, vocational training, and skill development for youth and women.</li>
+                              <li class="list-group">2. Support social welfare initiatives, including environmental sustainability and rural development.</li>
+                              <li class="list-group">3. Facilitate financial literacy programs and digital empowerment for marginalized sections.</li>
+                          </ul>
+                      </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="features-details" class="features-details section" style="position: relative; background-size: cover; padding-top: 120px; background-position: center; background-image: url('assets/background.png');">
+  <div class="container section-title text-center" data-aos="fade-up" style="position: relative; z-index: 2;">
+    <h2 style="color: #0027ba;"><span style="color: #f37e41;">Message</span> from the CEO's Desk</h2>
+  </div>
+
+  <div class="container" style="position: relative; z-index: 2;">
+    <div class="row gy-4 justify-content-between features-item">
+      <div class="col-sm-4 justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/1000050782.jpg" class="img-fluid rounded-4 shadow">
+      </div>
+      <div class="col-lg-8 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="content p-4" style="border-radius: 10px;">
+          <h3>Mrs. Vaishali Jere</h3>
+          <h5>Director, Abhay Jere Foundation</h5>
+          <p>
+            Dear Team,  <br>
+
+            Our Abhay Jere Foundation is a transformative initiative aimed at fostering the economic development of our community. This foundation represents our commitment to creating sustainable growth and empowering individuals through the establishment of diverse institutions that will serve as pillars of progress.  
+            
+            The Abhay Jere Foundation will focus on building institutions in key areas such as education, healthcare, skill development, and entrepreneurship. By addressing these critical sectors, we aim to uplift the community, create opportunities, and drive long-term economic prosperity.  
+          </p>
+          <p>
+            Our vision is to create a self-reliant and thriving community where every individual has access to the resources and support needed to achieve their full potential. Through collaboration, innovation, and a shared sense of purpose, we can make a meaningful impact on the lives of countless people.  
+
+            I invite each of you to join hands in supporting this noble cause. Together, we can build a brighter future for our community and leave a lasting legacy of positive change.  
+            <br>
+            <p class="text-start" style="font-style: italic;">
+              Thank you for your continued dedication and support. <br><br>
+              Warm regards, <br>
+              Vaishali Jere <br>
+              CEO <br>
+              Abhay Jere Foundation
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
+</section>
+
+
+  <!-- <div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let profile of profiles; let i = index">
+        <div class="profile-card shadow-lg">
+          <div class="image-container"
+               (mouseenter)="hoveredIndex = i"
+               (mouseleave)="hoveredIndex = null">
+            <img [ngClass]="{ 'expanded': hoveredIndex === i }" [src]="profile.image" alt="Profile Picture">
+          </div>
+          <div class="card-content">
+            <h5>{{ profile.name }}</h5>
+            <p class="position">{{ profile.position }}</p>
+            <div class="icons">
+              <i class="bi bi-envelope"></i>
+              <i class="bi bi-person-lines-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  
+  <!-- <app-experts></app-experts> -->
+
+  <!-- Team Section -->
+  <section id="team" class="team section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <!-- <div class="section-title-container d-flex align-items-center justify-content-between"> -->
+        <h2 style="color: #0027ba;"><span style="color: #f37e41;">Experts</span> & Advisors</h2>
+      </div>
+    <!-- </div> -->
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic"><img src="assets/experts/Picture1.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Dr. R. Venkateswaran </h4>
+              <span>Professor of Practice</span>
+              <p> PhD in Computer Science from Washington State University. </p>
+              <div class="social">
+                <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a> -->
+                <a href="https://www.linkedin.com/in/rvenki1/" target="_blank" rel="noopener noreferrer"> <i class="bi bi-linkedin"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic"><img src="assets/experts/Picture2.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Dr. Rahul Kulkarni </h4>
+              <span> Head - Vaccines Regulatory Affairs</span>
+              <p>Highly accomplished Doctor of Philosophy (Microbiology) </p>
+              <div class="social">
+                <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a> -->
+                <a href="https://www.linkedin.com/in/rahul-kulkarni-81562841/" target="_blank" rel="noopener noreferrer"> <i class="bi bi-linkedin"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic"><img src="assets/experts/Picture3.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Shri. Adesh Gokhale </h4>
+              <span>Director - Delivery Excellence at IBM India</span>
+              <p>Industry expertise include Energy & Utilities, Finance and Telecommunication. </p>
+              <div class="social">
+                <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a> -->
+                <a href="https://www.linkedin.com/in/adesh-gokhale-a6811944/" target="_blank" rel="noopener noreferrer"> <i class="bi bi-linkedin"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+              <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""> <i class="bi bi-linkedin"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+
+    </div>
+
+  </section><!-- /Team Section -->
+
+
+  
+  
+  
+  
+

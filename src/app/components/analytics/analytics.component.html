@@ -1,0 +1,124 @@
+<!-- Slider Section -->
+<div id="slider" class="slider section dark-background">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row">
+          <!-- Carousel Section -->
+          <div class="col-lg-6 col-md-12">
+              <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                  <!-- Indicators -->
+                  <div class="carousel-indicators">
+                      <button
+                          *ngFor="let slide of slides; let i = index"
+                          type="button"
+                          [attr.data-bs-target]="'#carouselExample'"
+                          [attr.data-bs-slide-to]="i"
+                          [class.active]="i === 0"
+                          aria-current="i === 0 ? 'true' : null"
+                          [attr.aria-label]="'Slide ' + (i + 1)">
+                      </button>
+                  </div>
+                  <!-- Slides -->
+                  <div class="carousel-inner">
+                      <div *ngFor="let slide of slides; let i = index" class="carousel-item" [class.active]="i === 0">
+                          <div class="d-block w-100" [ngStyle]="{'background-image': 'url(' + slide.image + ')', 'height': '500px', 'background-size': 'cover', 'background-position': 'center'}"></div>
+                      </div>
+                  </div>
+                  <!-- Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+          </div>
+          <!-- Mission and Vision Section -->
+          <div class="col-lg-6 col-md-12">
+              <div class="row" style="padding-left: 20px;">
+                  <div class="col-md-12 mt-3">
+                      <h3 style="color: #0027ba;"><span style="color: #f37e41;">Our</span> Mission</h3>
+                      <p>
+                        To empower communities by fostering economic growth and increasing per capita income through innovative programs, 
+                        impactful initiatives, and the establishment of robust institutions. 
+                        The foundation is committed to nurturing students, professionals, traders, and industrialists by providing them with opportunities, tools, and resources to realize their potential and contribute to holistic community development.                      
+                      </p>
+                  </div>
+                  <div class="col-md-12">
+                      <h3 style="color: #0027ba;"><span style="color: #f37e41;">Our</span> Vision</h3>
+                      <p>
+                        To create a self-reliant and prosperous society where individuals from all walks of life are equipped to drive economic progress, achieve financial well-being, and contribute to the sustained development of their communities. 
+                        Through collaborative efforts, the Abhay Jere Foundation envisions being a catalyst for inclusive growth and transformative change.                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Info Box Section -->
+<!-- <div class="info-box py-4">
+  <div class="container box-stat card inner-card shadow-sm">
+      <div class="card-body ">
+          <div class="row text-center">
+              <div class="small-card col-6 col-md-3">
+                  <div class="stat-item">
+                      <i class="bi bi-buildings display-6 text-warning"></i>
+                      <h2 class="mt-2">73</h2>
+                      <p>CHAPTERS</p>
+                  </div>
+              </div>
+              <div class="col-6 col-md-3">
+                  <div class="stat-item">
+                      <i class="bi bi-geo-alt display-6 text-warning"></i>
+                      <h2 class="mt-2">9</h2>
+                      <p>ZONES</p>
+                  </div>
+              </div>
+              <div class="col-6 col-md-3">
+                  <div class="stat-item">
+                      <i class="bi bi-people display-6 text-warning"></i>
+                      <h2 class="mt-2">18095</h2>
+                      <p>MEMBERS</p>
+                  </div>
+              </div>
+              <div class="col-6 col-md-3">
+                  <div class="stat-item">
+                      <i class="bi bi-globe display-6 text-warning"></i>
+                      <h2 class="mt-2">31</h2>
+                      <p>INTERNATIONAL</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="slider-box">
+    <div class="card shadow">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item d-flex align-items-center">
+            <i class="bi bi-clock me-3" style="font-size: 1.5rem; color: #0027ba;"></i>
+            <span class="flex-grow-1">Upcoming Events</span>
+          <i class="bi bi-chevron-right"><a href="#home"></a></i>
+        </li>
+        <li class="list-group-item d-flex align-items-center">
+          <i class="bi bi-calendar-check me-3" style="font-size: 1.5rem; color: #0027ba;"></i>
+          <span class="flex-grow-1">Completed Events</span>
+          <i class="bi bi-chevron-right"></i>
+        </li>
+        <li class="list-group-item d-flex align-items-center">
+          <i class="bi bi-megaphone me-3" style="font-size: 1.5rem; color: #0027ba;"></i>
+          <span class="flex-grow-1">Voice of JITO</span>
+          <i class="bi bi-chevron-right"></i>
+        </li>
+        <li class="list-group-item d-flex align-items-center">
+          <i class="bi bi-eye me-3" style="font-size: 1.5rem; color:#0027ba;"></i>
+          <span class="flex-grow-1"> Glance</span>
+          <i class="bi bi-chevron-right"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div> -->
+

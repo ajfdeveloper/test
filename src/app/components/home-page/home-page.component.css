@@ -1,0 +1,436 @@
+  
+  h3 {
+    color: #343a40;
+    font-weight: bold;
+  }
+  
+  ul.list-unstyled {
+    padding-left: 0;
+  }
+  
+  ul.list-unstyled li {
+    font-size: 1rem;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .row {
+    margin-bottom: 2rem;
+  }
+  
+  .testimonial-item {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .quote-icon-left,
+  .quote-icon-right {
+    color: #6c757d;
+  }
+
+  /*************************************/
+
+/* Styling for the profile card */
+.profile-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Add hover shadow effect */
+.profile-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image container */
+.image-container {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 4px solid #002F6C;
+}
+
+/* Image styling */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for image expansion */
+.image-container img.expanded {
+  transform: scale(1.2);
+}
+
+/* Card content */
+.card-content {
+  margin-top: 10px;
+}
+
+/* Position text */
+.position {
+  font-weight: bold;
+  color: #002F6C;
+}
+
+/* Icon styling */
+.icons {
+  margin-top: 10px;
+}
+
+.icons i {
+  font-size: 20px;
+  margin: 0 8px;
+  cursor: pointer;
+  color: #002F6C;
+  transition: color 0.3s;
+}
+
+.icons i:hover {
+  color: #007bff;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 15px;
+  }
+
+  .image-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icons i {
+    font-size: 18px;
+  }
+}
+
+.card-transition {
+  transition: transform 0.3s ease-in-out;
+}
+.card-transition:hover {
+  transform: scale(1.05);
+}
+.card-body {
+  text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+# Features Details Section
+--------------------------------------------------------------*/
+.features-details .features-item+.features-item {
+  margin-top: 60px;
+}
+
+.features-details .features-item .content {
+  /* background-color: color-mix(in srgb,#ffffff, transparent 95%); */
+  /* color: color-mix(in srgb, #3d4348, transparent 40%); */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.features-details .features-item h3 {
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.features-details .features-item .more-btn {
+  background-color: #388da8;
+  color: #ffffff;
+  padding: 6px 30px;
+  border-radius: 6px;
+}
+
+.features-details .features-item .more-btn:hover {
+  background-color: color-mix(in srgb, #ffffff, transparent 20%);
+}
+
+.features-details .features-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features-details .features-item ul li {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.features-details .features-item ul li:last-child {
+  padding-bottom: 0;
+}
+
+.features-details .features-item ul i {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #388da8;
+}
+
+.features-details .features-item img {
+  border-radius: 15px;
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+.section-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  /* background: #388da8; */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}  
+
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 100px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+
+  section,
+  .section {
+    scroll-margin-top: 66px;
+  }
+}
+
+
+  /*--------------------------------------------------------------
+  # Team Section
+  --------------------------------------------------------------*/
+  .team .team-member {
+    background-color: var(--surface-color);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 15px;
+    transition: 0.5s;
+    padding: 30px;
+    height: 100%;
+  }
+  
+  @media (max-width: 468px) {
+    .team .team-member {
+      flex-direction: column;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+  }
+  
+  .team .team-member .pic {
+    overflow: hidden;
+    width: 150px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  
+  .team .team-member .pic img {
+    transition: ease-in-out 0.3s;
+  }
+  
+  .team .team-member:hover {
+    transform: translateY(-10px);
+  }
+  
+  .team .team-member .member-info {
+    padding-left: 30px;
+  }
+  
+  @media (max-width: 468px) {
+    .team .team-member .member-info {
+      padding: 30px 0 0 0;
+      text-align: center;
+    }
+  }
+  
+  .team .team-member h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  
+  .team .team-member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+  }
+  
+  .team .team-member span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: color-mix(in srgb, var(--default-color), transparent 85%);
+    bottom: 0;
+    left: 0;
+  }
+  
+  @media (max-width: 468px) {
+    .team .team-member span::after {
+      left: calc(50% - 25px);
+    }
+  }
+  
+  .team .team-member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+  }
+  
+  .team .team-member .social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+  }
+  
+  @media (max-width: 468px) {
+    .team .team-member .social {
+      justify-content: center;
+    }
+  }
+  
+  .team .team-member .social a {
+    background: color-mix(in srgb, var(--default-color), transparent 94%);
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 36px;
+    height: 36px;
+  }
+  
+  .team .team-member .social a i {
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    font-size: 16px;
+    margin: 0 2px;
+  }
+  
+  .team .team-member .social a:hover {
+    background: var(--accent-color);
+  }
+  
+  .team .team-member .social a:hover i {
+    color: var(--contrast-color);
+  }
+  
+  .team .team-member .social a+a {
+    margin-left: 8px;
+  }
+
+  /*************************************/
+  section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 40px 0;
+  scroll-margin-top: 90px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+
+  section,
+  .section {
+    scroll-margin-top: 66px;
+  }
+}
+
+.collapse {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+.collapse.show {
+  display: block;
+}
+.list-group-item {
+  margin:10px 0;
+  padding:20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: bold;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+  border-radius: 8px;
+}
+.list-group-item:hover {
+  background: linear-gradient(135deg, #e9ecef, #dee2e6);
+  padding-left: 15px;
+}
+.submenu {
+  padding: 15px;
+  border-left: 5px solid #007bff;
+  margin-top: 5px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.submenu ul {
+  padding-left: 20px;
+}
+.submenu .list-group-item {
+  background: none;
+  border: none;
+  padding-left: 5px;
+  font-weight: normal;
+}
+.submenu .list-group-item:hover {
+  background: #f1f1f1;
+  padding-left: 10px;
+}
